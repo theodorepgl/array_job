@@ -34,5 +34,13 @@ puts hash_sort(Hash)
 
 #4. Hash Inversion
 #a. Write a method that inverts a hash, swapping keys and values.
+
+def hash_inversion(hashsort)
+	h = {"a"=>1, "c"=>3, "b"=>2, "d"=>4}
+	Hash[h.invert.to_h]
+end
+
+puts hash_inversion(Hash)
+
 #5. Hash Lookup
-#a. Write a method that takes a hash and a key, and returns the value associated with that key. If the key is not found, return a default value.
+#a. Write a method that takes a hash and a key, and returns the value associated with that key. If the key is not found, return a default value.'
