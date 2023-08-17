@@ -20,11 +20,25 @@ end
 def dup_array(numbers)
 	puts numbers.uniq()
 end
+#puts dup_array(arr3)
 
 #4. Reverse Array
-#a. Write a method that reverses an array in-place, without using built-in reverse methods.
+def reverse(numbers)
+	reversed = []
+	position = numbers.length - 1
+	while position >= 0
+		reversed << numbers[position]
+		position = position - 1
+	end
+	return reversed
+end
+#puts reverse (arr3)
+
 #5. Array Rotation
-#a. Write a method that rotates an array to the right by a specified number of positions.
+def rotate(numbers)
+	puts numbers.rotate()
+end
+#puts rotate(arr3)
 
 
 #1. Word Frequency Counter
