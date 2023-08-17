@@ -1,5 +1,5 @@
 #1. Array Sum
-arr1 = [1,2,3,3,4]
+arr1 = [1,2,3,4,5]
 arr2 = [2,4,6,8,8]
 arr3 = [3,6,6,9,12]
 
@@ -10,9 +10,19 @@ end
 #puts total_sum(arr2)
 #puts total_sum(arr3)
 
+#if about the integar
+#def array_sum(numbers)
+	#sum = 0
+	#numbers.each do |numbers|
+	#if numbers.class (Integar)
+		#sum += numbers
+		#end
+	#end
+	#sum
+#end
 #2. Find Maximum
 def find_max_num(numbers)
-	puts numbers.max()
+	numbers.max()
 end
 #puts find_max_num(arr1)
 
@@ -34,20 +44,16 @@ def reverse(numbers)
 end
 #puts reverse (arr3)
 
+def reverse_unshift (numbers)
+	reversed = []
+	numbers.each { |number| reversed.unshift(number)}
+	puts reversed
+end
+
+#puts reverse_unshift(arr3)
+
 #5. Array Rotation
 def rotate(numbers)
-	puts numbers.rotate()
+	numbers.rotate(3)
 end
 #puts rotate(arr3)
-
-
-#1. Word Frequency Counter
-#a. Write a method that takes a string and returns a hash where the keys are words in the string and the values are the frequencies of those words.
-#2. Hash Merge
-#a. Write a method that takes two hashes and merges them into a single hash, combining values for common keys.
-#3. Hash Sorting
-#a. Write a method that takes a hash and returns a new hash with the keys sorted alphabetically.
-#4. Hash Inversion
-#a. Write a method that inverts a hash, swapping keys and values.
-#5. Hash Lookup
-#a. Write a method that takes a hash and a key, and returns the value associated with that key. If the key is not found, return a default value.
